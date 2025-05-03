@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url("../img/hero-house.jpg");
+  @apply w-full h-dvh bg-no-repeat bg-cover flex items-center px-[8%];
+  background-position: center;
+}
+
+.sticky-nav {
+  @apply bg-[rgba(255,255,255,0.5)] text-black shadow shadow-[rgba(0,0,0,0.1)];
+}
