@@ -24,7 +24,9 @@
               >.</a
             >
           </div>
-          <div class="nav-menu flex items-center gap-8">
+          <div
+            class="nav-menu gap-8 lg:flex-row absolute flex-col top-0 left-[-120%] w-full min-h-[60dvh] bg-slate-900/40 backdrop-blur-sm lg:backdrop-blur-none flex items-center justify-center duration-300 z-50 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+          >
             <a
               href=""
               class="nav-link hover:bg-gradient-to-br from-sky-500 to-sky-600 hover:text-transparent inline-block bg-clip-text"
@@ -52,7 +54,7 @@
             >
           </div>
         </div>
-        <div class="nav-extra flex items-center gap-3">
+        <div class="nav-extra flex items-center gap-3 lg:none">
           <a
             href=""
             class="py-2 px-4 border-[2px] border-[rgba(255,255,255,0.3)] rounded-full hover:bg-[rgba(255,255,255,0.3)]"
@@ -103,17 +105,17 @@
           >
           <a
             href=""
-            class="py-4 px-12 bg-[rgba(255,255,255,0.2)] backdrop-blur-[3px]"
+            class="py-4 px-12 bg-[rgba(255,255,255,0.2)] text-white backdrop-blur-[3px]"
             >Sell</a
           >
           <a
             href=""
-            class="py-4 px-12 bg-[rgba(255,255,255,0.2)] backdrop-blur-[3px] rounded-tr-md"
+            class="py-4 px-12 bg-[rgba(255,255,255,0.2)] text-white backdrop-blur-[3px] rounded-tr-md"
             >Rent</a
           >
         </div>
         <div
-          class="grid grid-cols-4 gap-6 w-full items-end py-10 px-8 bg-white text-black rounded-tr-md rounded-ml-md rounded-mr-md"
+          class="grid lg:grid-cols-4 gap-6 w-full items-end py-10 px-8 bg-white text-black rounded-tr-md rounded-ml-md rounded-mr-md"
         >
           <div class="block">
             <p class="mb-2 font-medium text-gray-700">Location</p>
@@ -156,7 +158,7 @@
           </div>
           <div class="block">
             <button
-              class="bg-gradient-to-br from-sky-500 to-sky-600 text-white cursor-pointer py-2.5 px-5 rounded-full flex gap-3 items-center"
+              class="bg-gradient-to-br w-full from-sky-500 to-sky-600 text-white cursor-pointer py-2.5 px-5 rounded-full flex gap-3 items-center"
             >
               <i class="fas fa-magnifying-glass"></i>
               Search Properties
@@ -208,7 +210,7 @@
           class="type flex-[1_1_90%] flex items-center overflow-hidden text-nowrap gap-2 w-full"
         >
           <span
-            class="bg-gradient-to-br from-sky-500 to-sky-600 text-semibold text-white py-2 px-6 text-[0.9rem] tracking-wide rounded-full bg-[#f1f1f1]"
+            class="bg-gradient-to-br font-medium from-sky-500 to-sky-600 text-semibold text-white py-2 px-6 text-[0.9rem] tracking-wide rounded-full bg-[#f1f1f1]"
             >All Type</span
           >
           <span
@@ -244,19 +246,21 @@
             >Modular Home</span
           >
         </div>
-        <div class="paginate flex-[1_1_10%] flex items-center gap-2">
+        <div class="paginate flex-[1_1_10%] flex items-center gap-1 md:gap-2">
           <span
-            class="w-[40px] h-[40px] flex items-center justify-center hover:border-[#555] cursor-pointer border-[2px] border-[#eee] text-sm text-[#555] rounded-full"
+            class="md:w-[40px] md:h-[40px] w-[38px] text-xs h-[38px] flex items-center justify-center hover:border-[#555] cursor-pointer border-[2px] border-[#eee] md:text-sm text-[#555] rounded-full"
             ><i class="fas fa-chevron-left"></i
           ></span>
           <span
-            class="w-[40px] h-[40px] flex items-center justify-center hover:border-[#555] cursor-pointer border-[2px] border-[#eee] text-sm text-[#555] rounded-full"
+            class="md:w-[40px] md:h-[40px] w-[38px] text-xs h-[38px] flex items-center justify-center hover:border-[#555] cursor-pointer border-[2px] border-[#eee] md:text-sm text-[#555] rounded-full"
             ><i class="fas fa-chevron-right"></i
           ></span>
         </div>
       </div>
 
-      <main class="row-type grid grid-cols-3 py-10 gap-5">
+      <main
+        class="row-type grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-5"
+      >
         <div
           class="box-type rounded-md shadow-sm border-x-[1.6px] border-b-[1.6px] border-[#eee] hover:border-white p-1.5 shadow-[rgba(102,102,102,0.1)] hover:shadow-[rgba(102,102,102,0.5)]"
         >
@@ -487,7 +491,7 @@
     </section>
 
     <section class="agents py-20 px-[8%]" id="agents">
-      <main class="row-agents flex gap-4">
+      <main class="row-agents flex lg:flex-row flex-col gap-4">
         <div
           class="left-agents rounded-xl flex-[1_1_40%] relative overflow-hidden bg-[rgba(0,0,0,0.2)] text-white"
         >
@@ -498,7 +502,7 @@
           />
           <div class="content w-full p-6 relative">
             <img
-              class="absolute w-[220px] bottom-0 right-0"
+              class="absolute lg:w-[220px] w-[180px] bottom-0 right-0"
               src="https://png.pngtree.com/png-clipart/20240625/original/pngtree-a-man-in-suit-with-blue-tie-and-white-background-png-image_15410119.png"
               alt=""
             />
@@ -578,7 +582,7 @@
             ></span>
           </div>
           <div class="w-full flex justify-center items-center py-8">
-            <div class="text-center w-2/3">
+            <div class="text-center w-4/5 lg:w-2/3">
               <h2 class="text-4xl font-medium mb-3">
                 Contact with our top agents
               </h2>
@@ -588,7 +592,7 @@
               >
             </div>
           </div>
-          <div class="people grid grid-cols-4 gap-3">
+          <div class="people grid grid-cols-2 lg:grid-cols-4 gap-3">
             <div class="box block">
               <div
                 class="w-full bg-gradient-to-br from-sky-200 to-slate-200 rounded-xl"
@@ -715,8 +719,8 @@
     </section>
 
     <footer class="footer w-full pt-12 px-[8%] border-t-[2px] border-[#f5f5f5]">
-      <div class="flex gap-6 pb-16">
-        <div class="left-footer flex-1/2">
+      <div class="flex lg:gap-6 gap-14 flex-wrap lg:flex-nowrap pb-16">
+        <div class="left-footer lg:flex-1/2">
           <h4 class="font-semibold text-xl">Subscribe to our newsletter</h4>
           <p class="w-3/4 text-sm text-[#666] my-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quo
@@ -735,7 +739,9 @@
             ></a>
           </div>
         </div>
-        <div class="right-footer flex-1/2 flex justify-between">
+        <div
+          class="right-footer lg:flex-1/2 flex-[1_1_100%] flex md:justify-between md:flex-row md:gap-0 gap-6 flex-col"
+        >
           <div class="block">
             <h5 class="mb-2.5 font-medium">Company</h5>
             <div class="flex text-[0.93rem] flex-col gap-2 text-[#666]">
